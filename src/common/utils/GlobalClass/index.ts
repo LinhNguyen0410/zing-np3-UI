@@ -1,0 +1,1 @@
+export { hoverTextClass } from "./globalClassStyles";
