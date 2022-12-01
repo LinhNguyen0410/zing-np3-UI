@@ -1,14 +1,14 @@
 import MenuItem from "../../common/components/MenuItem";
 import Logo from "../../components/Logo";
-import SiderbarSection from "../../components/SidebarSection";
+import SidebarLeftItem from "../../components/SidebarLeftItem";
 import { sidebarCustomize, sidebarLibrary, sidebarMenu } from "./data";
 
-const Sidebar = () => {
-  const backgroundFirst = "#1c1f36";
+const SidebarLeftSection = () => {
+  const backgroundFirst = "#191b25";
   return (
-    <div className={`bg-[${backgroundFirst}] pl-12  top-0 border-r border-zinc-500`}>
+    <div className={`bg-[#191b25] border-r border-zinc-500 h-[100%]`}>
       <Logo />
-      <SiderbarSection title="Menu">
+      <SidebarLeftItem title="Menu">
         <>
           {sidebarMenu.map((item, idx) => (
             <MenuItem key={idx + item.text} content={item.text}>
@@ -16,8 +16,8 @@ const Sidebar = () => {
             </MenuItem>
           ))}
         </>
-      </SiderbarSection>
-      <SiderbarSection title="Library">
+      </SidebarLeftItem>
+      <SidebarLeftItem title="Library">
         <>
           {sidebarLibrary.map((item, idx) => (
             <MenuItem key={idx + item.text} content={item.text}>
@@ -25,8 +25,8 @@ const Sidebar = () => {
             </MenuItem>
           ))}
         </>
-      </SiderbarSection>
-      <SiderbarSection title="Customize">
+      </SidebarLeftItem>
+      <SidebarLeftItem title="Customize">
         <>
           {sidebarCustomize.map((item, idx) => (
             <MenuItem key={idx + item.text} content={item.text}>
@@ -34,9 +34,9 @@ const Sidebar = () => {
             </MenuItem>
           ))}
         </>
-      </SiderbarSection>
+      </SidebarLeftItem>
     </div>
   );
 };
 
-export default Sidebar;
+export default SidebarLeftSection;

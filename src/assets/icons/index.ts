@@ -13,3 +13,7 @@ export { default as PlayIcon } from "./Play";
 export { default as SettingIcon } from "./Setting";
 export { default as HomeIcon } from "./Home";
 export { default as PodcastsIcon } from "./Podcasts";
+export { default as BellIcon } from "./Bell";
+export { default as CheckIcon } from "./Check";
+export { default as ChevronLeft } from "./ChevronLeft";
+export { default as ChevronRight } from "./ChevronRight";
