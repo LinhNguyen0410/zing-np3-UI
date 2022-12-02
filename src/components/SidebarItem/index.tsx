@@ -4,7 +4,7 @@ type Props = {
   title: string;
   children: JSX.Element;
 };
-const SidebarLeftItem = (props: Props) => {
+const SidebarItem = (props: Props) => {
   const { title, children } = props;
 
   return (
@@ -15,4 +15,4 @@ const SidebarLeftItem = (props: Props) => {
   );
 };
 
-export default SidebarLeftItem;
+export default SidebarItem;

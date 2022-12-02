@@ -1,14 +1,17 @@
-import React from "react";
-
-const PlayIcon = () => {
+type Props = {
+  w?: number;
+  h?: number;
+  color?: string;
+};
+const PlayIcon = ({ w = 4, h = 4, color = "currentColor" }: Props) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
       viewBox="0 0 24 24"
       strokeWidth="1.5"
-      stroke="currentColor"
-      className="w-4 h-4">
+      stroke={color}
+      className={`w-${w} h-${h}`}>
       <path strokeLinecap="round" strokeLinejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
       <path
         strokeLinecap="round"

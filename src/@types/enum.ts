@@ -1,4 +1,4 @@
-export const enum BUTTON_SLIDE_ACTION {
-  NEXT = "next",
-  PREVIOUS = "previous",
+export enum HEADER_ACTIOS_TYPE {
+  NOTIFY = "notify",
+  THEME = "theme",
 }

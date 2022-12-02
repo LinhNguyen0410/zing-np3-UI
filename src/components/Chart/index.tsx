@@ -1,0 +1,57 @@
+import React from "react";
+import {
+  Chart as ChartJS,
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  Title,
+  Tooltip,
+  Legend,
+} from "chart.js";
+import { Line } from "react-chartjs-2";
+
+ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend);
+
+export const options = {
+  responsive: true,
+  plugins: {
+    legend: {
+      position: "top" as const,
+    },
+    title: {
+      display: true,
+      text: "#zingchart",
+    },
+  },
+};
+
+const labels = ["January", "February", "March", "April", "May", "June", "July"];
+
+export const data = {
+  labels,
+  datasets: [
+    {
+      label: "Anh không sao đâu",
+      data: [1, 2, 3, 21, 2, 2, 1, 32, 3, 1, 2, 3],
+      borderColor: "rgb(102, 157, 87)",
+      backgroundColor: "rgba(47, 188, 57, 0.981)",
+    },
+    {
+      label: "Về bên anh",
+      data: [12, 32, 13, 21, 2, 32, 1, 32, 36, 21, 2, 33],
+      borderColor: "rgb(235, 53, 53)",
+      backgroundColor: "rgba(61, 6, 6, 0.5)",
+    },
+    {
+      label: "Cuối cùng thì",
+      data: [41, 25, 31, 21, 22, 32, 31, 12, 13, 21, 92, 3],
+      borderColor: "rgb(178, 187, 23)",
+      backgroundColor: "rgba(240, 212, 52, 0.5)",
+    },
+  ],
+};
+
+export function Chart() {
+  return <Line options={options} data={data} />;
+}
