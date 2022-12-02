@@ -1,4 +1,5 @@
 import MenuItem from "../../common/components/MenuItem";
+import { playerHeight } from "../../common/utils/GlobalClass/globalClassStyles";
 import Logo from "../../components/Logo";
 import SidebarItem from "../../components/SidebarItem";
 import { sidebarCustomize, sidebarLibrary, sidebarMenu } from "./data";
@@ -6,7 +7,7 @@ import { sidebarCustomize, sidebarLibrary, sidebarMenu } from "./data";
 const SidebarSection = () => {
   const backgroundFirst = "#191b25";
   return (
-    <div className={`bg-[#191b25] border-r border-zinc-500 w-[16%] h-[100%] fixed overflow-y-scroll`}>
+    <div className={`bg-[#191b25] border-r border-zinc-500 w-[16%] h-[100%] pb-[90px] fixed overflow-y-scroll`}>
       <Logo />
       <SidebarItem title="Menu">
         <>

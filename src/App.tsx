@@ -9,7 +9,7 @@ function App() {
   SwiperCore.use([Autoplay]);
   return (
     <div className="w-[100%] flex select-none">
-      <div className="sidebar-layout w-[16%] ">
+      <div className="sidebar-layout w-[16%]">
         <SidebarSection />
       </div>
       <div className="content-layout flex-1 bg-slate-500">

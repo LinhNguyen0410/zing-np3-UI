@@ -32,22 +32,22 @@ export const data = {
   labels,
   datasets: [
     {
-      label: "Anh không sao đâu",
+      label: "Abcdxyz",
       data: [1, 2, 3, 21, 2, 2, 1, 32, 3, 1, 2, 3],
       borderColor: "rgb(102, 157, 87)",
-      backgroundColor: "rgba(47, 188, 57, 0.981)",
+      backgroundColor: "green",
     },
     {
-      label: "Về bên anh",
+      label: "Chau len ba",
       data: [12, 32, 13, 21, 2, 32, 1, 32, 36, 21, 2, 33],
-      borderColor: "rgb(235, 53, 53)",
+      borderColor: "red",
       backgroundColor: "rgba(61, 6, 6, 0.5)",
     },
     {
-      label: "Cuối cùng thì",
+      label: "Lalala",
       data: [41, 25, 31, 21, 22, 32, 31, 12, 13, 21, 92, 3],
       borderColor: "rgb(178, 187, 23)",
-      backgroundColor: "rgba(240, 212, 52, 0.5)",
+      backgroundColor: "yellow",
     },
   ],
 };

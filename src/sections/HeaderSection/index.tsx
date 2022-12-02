@@ -1,6 +1,6 @@
 import React from "react";
 import HeaderAuth from "../../components/Header/HeaderAuth";
-import HeaderNavbar from "../../components/Header/HeaderNavbar";
+import HeaderSearch from "../../components/Header/HeaderSearch";
 import HeaderActions from "../../components/Header/HeaderActions";
 import { BellIcon } from "../../assets/icons";
 import { HEADER_ACTIOS_TYPE } from "../../@types/enum";
@@ -11,10 +11,13 @@ const HeaderSection = () => {
   const handleHeaderActions = (type: HEADER_ACTIOS_TYPE) => {
     console.log(type);
   };
+  const handleInputChange = (value: string) => {
+    console.log(value);
+  };
   return (
     <div className={`header-wrapper bg-[#081018] h-20 flex items-center justify-between border-b border-zinc-500`}>
       <div className="header-left ml-12">
-        <HeaderNavbar />
+        <HeaderSearch onChange={handleInputChange} />
       </div>
       <div className="header-right flex items-center  gap-8 mr-12">
         <div className="flex gap-4">

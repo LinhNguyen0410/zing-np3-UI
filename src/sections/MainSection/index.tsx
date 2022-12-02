@@ -104,7 +104,7 @@ const MainSection = () => {
       </div>
 
       <SectionsWrap heading="#zingchart">
-        <div className="flex justify-start items-center gap-5">
+        <div className="flex justify-center items-center gap-5">
           <div className="flex flex-col gap-y-5">
             <SongItem
               mode={SONG_BLOCK_TYPE.RECTANGLE}

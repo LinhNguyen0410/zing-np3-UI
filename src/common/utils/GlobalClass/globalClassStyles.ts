@@ -5,3 +5,4 @@ export const songBlockRectangle =
 export const textPrimary = " w-[70%] text-sm text-truncate";
 export const textSecondary = "w-[70%] text-xs text-stone-400 text-truncate";
 export const sectionWrap = "flex justify-center flex-wrap gap-4 mt-6";
+export const playerHeight = 90;

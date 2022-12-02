@@ -7,7 +7,7 @@ import {
   HomeIcon,
   ImportIcon,
   MusicIcon,
-  PlayIcon,
+  PlayIconSmall,
   SettingIcon,
   SpeakerIcon,
   TimeIcon,
@@ -43,7 +43,7 @@ export const sidebarLibrary = [
   },
   {
     text: "Playlist",
-    icon: <PlayIcon />,
+    icon: <PlayIconSmall />,
   },
   {
     text: "Favourites",
